@@ -1,0 +1,345 @@
+import type {
+  Achievement,
+  Experience,
+  NavigationItem,
+  Project,
+  ResearchProject,
+  SkillCategory,
+  SocialLink,
+} from "@/types/portfolio";
+
+export const profile = {
+  name: "Nathnael Abraham",
+  role: "Full-Stack Software Engineer",
+  location: "Ypsilanti, Michigan",
+  email: "Nathnaelefrem@gmail.com",
+  emailHref: "mailto:Nathnaelefrem@gmail.com",
+  linkedIn: "https://www.linkedin.com/in/nathnael-abraham12",
+  education: "Applied Computer Science at Eastern Michigan University",
+  program: "Applied Computer Science",
+  university: "Eastern Michigan University",
+  gpa: 3.95,
+  honorsCollege: true,
+  deansListYears: 3,
+  interests: ["Frontend", "Backend", "Cloud", "AI", "Technical research"],
+  bio: "I build full-stack web applications, AI-powered tools, and research-driven software systems.",
+  careerGoal:
+    "I’m currently seeking an entry-level software engineering role where I can contribute to production software, learn from experienced engineers, and keep turning ideas into reliable products. Over time, I want to grow into an engineer who can lead end-to-end development, connect research with practical applications, and build full-stack and AI-enabled systems that create meaningful value.",
+} as const;
+
+export const navigationItems: NavigationItem[] = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Research", href: "#research" },
+  { label: "Experience", href: "#experience" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const socialLinks: SocialLink[] = [
+  {
+    platform: "LinkedIn",
+    href: "https://www.linkedin.com/in/nathnael-abraham12",
+  },
+];
+
+export const achievements: Achievement[] = [
+  { value: "3.95", label: "GPA" },
+  { value: "3×", label: "Dean’s List" },
+  { value: "25%", label: "Increase in site engagement" },
+  { value: "20%", label: "Reduction in deployment errors" },
+];
+
+export const skills: SkillCategory[] = [
+  {
+    name: "Frontend",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Vite",
+      "HTML",
+      "CSS",
+      "React Native",
+    ],
+  },
+  {
+    name: "Backend and Data",
+    skills: [
+      "Node.js",
+      "REST APIs",
+      "GraphQL",
+      "Apollo Server",
+      "PostgreSQL",
+      "SQL",
+      "JSON",
+      "Python",
+    ],
+  },
+  {
+    name: "Cloud and DevOps",
+    skills: ["AWS", "S3", "EC2", "Cognito", "Linux", "CI/CD", "Git", "GitHub"],
+  },
+  {
+    name: "Testing and Engineering",
+    skills: [
+      "Jest",
+      "JUnit",
+      "Mockito",
+      "Postman",
+      "Unit Testing",
+      "Data Structures",
+      "Algorithms",
+      "Object-Oriented Programming",
+    ],
+  },
+  {
+    name: "AI and Research",
+    skills: [
+      "OpenAI API",
+      "CLIP",
+      "DINOv2",
+      "K-means",
+      "t-SNE",
+      "ARI",
+      "NMI",
+      "Data Preprocessing",
+    ],
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    role: "Full-Stack Cloud Engineer Volunteer",
+    startDate: "November 2024",
+    endDate: "July 2025",
+    description:
+      "Built and maintained a fitness-focused web application using React, TypeScript, and Vite.",
+    accomplishments: [
+      "Integrated REST APIs and OpenAI services and used Postman for API testing.",
+      "Worked with AWS S3, EC2, and Cognito while supporting Linux deployment and troubleshooting.",
+      "Collaborated through biweekly sprints using GitHub, Slack, and Notion.",
+      "Helped reduce deployment errors by 20% through testing and CI/CD improvements.",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "REST APIs",
+      "OpenAI API",
+      "AWS",
+      "S3",
+      "EC2",
+      "Cognito",
+      "Linux",
+      "GitHub",
+      "CI/CD",
+    ],
+  },
+  {
+    role: "Frontend Developer",
+    company: "GAG Trading Company",
+    startDate: "August 2021",
+    endDate: "October 2021",
+    description:
+      "Worked in a five-person team to build a responsive landing page using HTML, CSS, and JavaScript.",
+    accomplishments: [
+      "Improved site engagement by 25%.",
+      "Built modular frontend components.",
+      "Used Git and GitHub for version control and helped reduce merge conflicts by 30%.",
+    ],
+    technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    title: "LawBandit",
+    description:
+      "A legal productivity platform that combines structured legal-writing practice with an AI-assisted syllabus-to-calendar workflow.",
+    highlights: [
+      "Redesigned the default Next.js landing page into a branded tool-selection experience that reveals the available workflows on demand.",
+      "Built an IRAC Coach with section-level writing validation, local autosave, a practice timer, and one completion flow for Markdown and Word exports.",
+      "Created a syllabus converter that accepts pasted text or PDF uploads and turns extracted assignments, readings, exams, and dates into editable events.",
+      "Processes PDFs through a custom Next.js API route and OpenAI structured JSON, while pasted text uses chrono-node to avoid unnecessary model calls.",
+      "Supports list and calendar views, date shifting, workflow reset, and .ics export for Google Calendar, Apple Calendar, and Outlook.",
+    ],
+    technologies: [
+      "Next.js App Router",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Tailwind CSS",
+      "OpenAI API",
+      "chrono-node",
+      "react-calendar",
+      "ics",
+      "Vercel",
+    ],
+    featured: true,
+    liveUrl: "https://law-bandit-feature-project-cm2q.vercel.app/",
+  },
+  {
+    title: "Client Management Application",
+    description:
+      "A client-management frontend and GraphQL backend for organizing and working with client data.",
+    technologies: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Apollo GraphQL",
+      "Node.js",
+      "PostgreSQL",
+      "Jest",
+    ],
+    featured: true,
+  },
+  {
+    title: "Full-Stack Sports Statistics Platform",
+    description:
+      "A full-stack, AI-enhanced sports analytics platform for exploring player data across Soccer, NBA, NFL, and MLB, building fantasy teams, and generating performance predictions.",
+    highlights: [
+      "Built cross-sport player search, expandable detail views, selectable stat filters, comparison leaderboards, and recent-search history stored with localStorage.",
+      "Integrated BallDontLie for NBA, NFL, and MLB data and TheSportsDB for Soccer through modular API services and an Express REST backend.",
+      "Developed separate NBA, NFL, and MLB fantasy-team tables with custom fantasy scoring, performance colors, score-based sorting, team power calculations, and player removal.",
+      "Created an Honors-project AI prediction system as a standalone React and Express prototype before integrating it into the main application.",
+      "Designed OpenAI prompts that request missing player statistics before producing projections and explaining the model's reasoning through secure backend routes.",
+      "Treats soccer analysis as experimental by combining TheSportsDB data with OpenAI rather than claiming access to live web search through the API.",
+      "Uses reusable React components, separated API services, Express route handlers, page-based organization, lightweight localStorage authentication, and toast feedback.",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "Express",
+      "REST APIs",
+      "Axios",
+      "OpenAI API",
+      "Chart.js",
+      "BallDontLie",
+      "TheSportsDB",
+      "localStorage",
+      "Prompt engineering",
+    ],
+    featured: true,
+  },
+  {
+    title: "Automated Forex Trading System",
+    description:
+      "An end-to-end Python trading system implementing a TJR / Smart Money Concepts strategy across six major currency pairs on the one-hour timeframe, with cloud and local execution plus shared-capital portfolio backtesting.",
+    highlights: [
+      "Built the complete workflow for signal generation, position sizing, trade execution, open-position management, and performance tracking across six major FX pairs.",
+      "Deployed a serverless OANDA trading workflow with AWS Lambda, DynamoDB, and scheduled triggers for hourly market checks, execution, and cloud-based trade tracking.",
+      "Developed a separate MetaTrader 5 / Exness bot with broker connectivity validation, automated order placement, position management, and local trade-state persistence.",
+      "Implemented ATR-based stop loss and take profit, breakeven and runner logic, extended holding rules, price-structure trailing stops, margin-aware sizing, cooldowns, and open-trade limits.",
+      "Built a shared-capital portfolio simulator using roughly two years of Yahoo Finance data, processing 12,000+ hourly candles per pair and executing 2,000+ historical trades across the portfolio.",
+      "Created comparison tooling to investigate live-versus-backtest differences caused by margin limits, spreads, slippage, candle feeds, and execution timing.",
+      "Diagnosed broker-specific reliability issues including unsupported fill modes, stale connectivity checks, order-close edge cases, and differences between simulated and live execution.",
+    ],
+    technologies: [
+      "Python",
+      "AWS Lambda",
+      "DynamoDB",
+      "OANDA",
+      "MetaTrader 5",
+      "Exness",
+      "Yahoo Finance",
+      "Serverless architecture",
+      "Portfolio backtesting",
+      "Algorithmic trading",
+      "ATR risk management",
+      "Smart Money Concepts",
+    ],
+    featured: true,
+  },
+  // Replace this temporary entry when verified project details are available.
+  {
+    title: "Future Project Two",
+    description: "Another future project will be documented here.",
+    technologies: [],
+    featured: false,
+    placeholder: true,
+  },
+];
+export const researchProjects: ResearchProject[] = [
+  {
+    title: "Soccer Event Clustering Research Project",
+    status: "Ongoing research",
+    summary:
+      "An ongoing machine learning and computer vision project studying how pretrained representations encode labeled soccer events from broadcast footage. The broader goal is to improve event classification and support future game-flow prediction.",
+    pipeline: [
+      "JSON Annotations",
+      "Event Windows",
+      "Model Embeddings",
+      "Clustering",
+      "Evaluation",
+    ],
+    contributions: [
+      "I contribute to preprocessing and feature-extraction workflows that read timestamped match annotations and extract event-centered frame windows.",
+      "I help organize outputs consistently by match and event type and generate structured event-level .npy features for downstream experiments.",
+      "I debug file paths, missing directories, Python environments, and model dependencies across the research workflow.",
+      "I inspect annotation JSON and extraction behavior, then help patch event-window logic to reduce label noise and mismatches.",
+      "I compare representation-learning approaches and analyze whether clusters reflect event meaning or match-specific visual similarity.",
+    ],
+    methods: [
+      "Generate frame-level embeddings with CLIP, DINOv2, and VideoMAE.",
+      "Mean-pool frame embeddings within event windows to study temporal aggregation at the event level.",
+      "Evaluate feature spaces with K-means, t-SNE, ARI, NMI, and qualitative cluster-purity inspection by event label and match.",
+    ],
+    challenges: [
+      "Noisy or mismatched labels and timestamp drift",
+      "Visually similar event classes",
+      "Match-level differences in camera angle, lighting, field appearance, and broadcast style",
+      "Insufficient temporal context for separating event semantics",
+    ],
+    findings: [
+      "CLIP does not separate soccer event types well in the current experiments.",
+      "DINOv2 produces stronger event-level structure than CLIP, while VideoMAE does not clearly outperform DINOv2 in the current setup.",
+      "Many embeddings cluster around match-specific appearance rather than event meaning, revealing a gap between visual similarity and event semantics.",
+      "Mean pooling produces cleaner, more compact event representations, especially by match, but event classes still remain mixed.",
+      "Label noise and timestamp drift continue to affect clustering quality.",
+    ],
+    nextSteps: [
+      "Incorporate richer temporal context and more deliberate frame aggregation.",
+      "Explore triplet loss and metric-learning approaches.",
+      "Test supervised event classification as a downstream task.",
+      "Use annotated match timelines to investigate game-flow prediction and patterns that may precede goals.",
+    ],
+    technologies: [
+      "Python",
+      "NumPy",
+      "OpenCV",
+      "PyTorch",
+      "Hugging Face Transformers",
+      "scikit-learn",
+      "CLIP",
+      "DINOv2",
+      "VideoMAE",
+      "K-means",
+      "t-SNE",
+      "ARI",
+      "NMI",
+      "JSON parsing",
+      "Feature extraction",
+    ],
+  },
+  // Replace this temporary entry when verified research details are available.
+  {
+    title: "Future Research Project",
+    summary: "Research details will be added when they are available.",
+    pipeline: [],
+    contributions: [],
+    methods: [],
+    challenges: [],
+    findings: [],
+    nextSteps: [],
+    technologies: [],
+    temporary: true,
+  },
+];
