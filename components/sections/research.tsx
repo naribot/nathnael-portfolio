@@ -154,7 +154,7 @@ export function Research() {
           <Reveal key={study.title} className="mt-8">
             <aside className="rounded-xl border border-dashed border-border p-5">
               <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-                Temporary research placeholder
+                Temporary research placeholder for when i do more research
               </p>
               <h3 className="mt-2 font-semibold text-foreground">{study.title}</h3>
               <p className="mt-2 text-sm text-muted">{study.summary}</p>
