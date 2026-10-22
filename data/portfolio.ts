@@ -228,6 +228,7 @@ export const projects: Project[] = [
       "Prompt engineering",
     ],
     featured: true,
+    repositoryUrl: "https://github.com/naribot/multi-sport-stats",
   },
   {
     title: "Automated Forex Trading System",
