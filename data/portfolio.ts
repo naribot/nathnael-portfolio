@@ -258,6 +258,7 @@ export const projects: Project[] = [
       "Smart Money Concepts",
     ],
     featured: true,
+    repositoryUrl: "https://github.com/Signil/aws-trading-bot",
   },
   {
     title: "LegalFlow",
