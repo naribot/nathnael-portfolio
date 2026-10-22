@@ -34,7 +34,6 @@ export type Project = {
   highlights?: string[];
   technologies: string[];
   featured: boolean;
-  placeholder?: boolean;
   liveUrl?: string;
   repositoryUrl?: string;
   image?: string;

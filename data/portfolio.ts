@@ -258,13 +258,37 @@ export const projects: Project[] = [
     ],
     featured: true,
   },
-  // Replace this temporary entry when verified project details are available.
   {
-    title: "Future Project Two",
-    description: "Another future project will be documented here.",
-    technologies: [],
-    featured: false,
-    placeholder: true,
+    title: "LegalFlow",
+    description:
+      "A functional, multi-tenant legal intake and matter-onboarding MVP that helps small law firms move prospective clients from initial inquiry through conflict review, consultation scheduling, and electronic engagement.",
+    highlights: [
+      "Built a responsive public law-firm experience and multi-step intake flow that atomically creates linked client, matter, and intake records through a PostgreSQL function.",
+      "Implemented secure document collection with a private Supabase Storage bucket, file validation, retry states, and short-lived signed URLs for authenticated attorney access.",
+      "Created a protected, firm-scoped attorney dashboard with search and status filters, matter details, required-action checklists, and a workflow progress timeline.",
+      "Designed an attorney-led conflict-review workflow with clear, conflict-found, and needs-review outcomes; consultation and engagement actions remain blocked until an attorney records clearance.",
+      "Integrated Postmark, Calendly, and Dropbox Sign through server-side workflows for transactional email, consultation invitations, and electronic engagement letters.",
+      "Designed a multi-tenant PostgreSQL model with Row Level Security, automatic firm attribution, role-based staff access, and private records isolated by law firm.",
+      "Added append-only audit logging for sensitive data changes and application-level matter-read events, capturing firm, user, action, record, and timestamp context.",
+    ],
+    technologies: [
+      "React 19",
+      "JavaScript",
+      "Vite",
+      "Supabase",
+      "PostgreSQL",
+      "Row Level Security",
+      "Supabase Auth",
+      "Supabase Storage",
+      "Edge Functions",
+      "Postmark",
+      "Calendly",
+      "Dropbox Sign",
+      "SQL migrations",
+      "Multi-tenancy",
+      "GitHub",
+    ],
+    featured: true,
   },
 ];
 export const researchProjects: ResearchProject[] = [

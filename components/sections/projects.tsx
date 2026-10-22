@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 
 export function Projects() {
   const featuredProjects = projects.filter((project) => project.featured);
-  const placeholderProjects = projects.filter((project) => project.placeholder);
 
   return (
     <Section id="projects">
@@ -113,21 +112,6 @@ export function Projects() {
           ))}
         </div>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {placeholderProjects.map((project, index) => (
-            <Reveal key={project.title} delay={index * 0.05}>
-              <article
-                className="h-full min-w-0 rounded-xl border border-dashed border-border bg-surface/50 p-5"
-              >
-              <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-                I will put new project upon completion
-              </p>
-              <h3 className="mt-2 font-semibold text-foreground">{project.title}</h3>
-              <p className="mt-2 text-sm text-muted">{project.description}</p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
       </Container>
     </Section>
   );
