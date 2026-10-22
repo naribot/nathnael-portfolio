@@ -289,6 +289,7 @@ export const projects: Project[] = [
       "GitHub",
     ],
     featured: true,
+    repositoryUrl: "https://github.com/Nadew11/lawfirm",
   },
 ];
 export const researchProjects: ResearchProject[] = [
